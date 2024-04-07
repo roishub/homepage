@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;1,900&family=Work+Sans:ital,wght@1,200&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055, #7597de);
+}
+header
+{
+    position: absolute;
+    
+    top: -3;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo
+{
+    color: #fff;
+    position: relative;
+    left: 2px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1053;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#moon
+{
+
+    size-adjust: 50%;
+    mix-blend-mode:screen;
+}
+#text
+{
+    position: relative;
+
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 5vw;
+    z-index: 9;
+}
+#btn
+{
+    position: relative;
+    text-align: center;
+    margin-left: 30px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 18px;
+    border-radius: 30px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+}
+.sec
+{
+    position: relative;
+    text-align: center;
+    padding-left: 80px;
+    padding-top: 80px;
+    background-color: #FFFFFF;
+}
+.hi
+{
+    width: 600px;
+}
+.keyboard
+{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+/* Middle cloud */
+#clouds1 {
+    margin-top: 0;
+    bottom: 20px;
+    background: url(assets/clouds1.png);
+}
+/* Front cloud */
+#clouds2 {
+    animation-timing-function: linear;
+    animation: cloud_anim 95s linear infinite;
+    background: url(assets/clouds2.png);
+    border-bottom: 1px solid white;
+}
+/* Back cloud */
+#clouds3 {
+    position: absolute;
+    bottom: 30px;
+    background-position-x: -140px;
+    animation-timing-function: linear;
+    animation: cloud3_left 95s linear infinite;
+    background: url(assets/clouds3.png);
+    filter: brightness(89%);
+}
+
+.clouds {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    bottom: 0px;
+    left: 0;
+    animation-timing-function: linear;
+}
+@keyframes cloud_anim {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 2000px 0;
+    }
+}
+@keyframes cloud3_left {
+    0% {
+        background-position: 0 0; /* Start position */
+    }
+    100% {
+        background-position: -2000px 0;/* Move left by changing the value */
+    }
+}
+
+
+/* -----------------------------------part1-------------------------------------- */
+.sec h2
+{
+    font-size: 3em;
+    font-family: "Work sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-bottom: 10px;
+    color: #000000;
+}
+.sec p
+{
+    position: absolute;
+    text-align: center;
+    font-family: "Work sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 1.2em;
+    color: #000000;
+}
+
+/* --------------------------------------service----------------------------------- */
+
+.ser{
+    background-color: #FFFFFF;
+    padding-top: 3%;
+    padding-bottom: 0px;
+    
+}
+.service__container {
+    position: relative;
+    padding-top: 0%;
+    display: block;
+    background-color: #FFFFFF;
+}
+.section__header {
+    text-align: center;
+    color: #000000;
+    font-size: 4em;
+    font-family: 'Work Sans', sans-serif;
+}
+.section__description{
+    text-align: center;
+    font-size: 1.2em;
+    color: #000000;
+}
+.service__card h4,
+.service__card p {
+    color: #000000;
+}
+.service__grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    justify-content: space-between;
+    
+}
+.service__grid > * {
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.service__grid > *:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+.service__card {
+    text-align: center;
+    width: 280px; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 20px; 
+    box-shadow: 0 4px 10px 6px rgba(0, 0, 0, 0.1); 
+    padding: 30px;
+}
+.service__card img {
+    position: relative;
+    width: 155px;
+    height: 155px;
+    margin-bottom: 15px;
+}
+/* --------------------------------------helps --------------------------- */
+
+.wrapper {
+
+padding-top: 1px;
+padding-bottom: 20px; 
+background-color: #FFFFFF;
+}
+
+.container {
+margin: 0 auto;
+max-width: 1200px; 
+padding: 0 0px; 
+}
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Work sans", sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000; 
+}
+
+/* CSS for columns */
+.row {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.column {
+flex: 1;
+width: 45%; /* Adjust the width as needed */
+margin-bottom: 20px;
+}
+
+.point {
+display: block;
+padding: 40px;
+align-items: center;
+margin-bottom: 20px;
+}
+.icon {
+width: 85px;
+height: 85px;
+margin-right: 10px;
+}
+
+/* CSS for text in points */
+.point p {
+margin: 0;
+}
+
+/* --------------------------------------Footer-------------------------------------------*/
+.footer {
+    background-color: #272829;
+    color: white;
+    padding: 2.5em;
+    text-align: center;
+}
+footer article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 50px 40px;
+    margin: -99px 20px 20px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #773ecb, #2663ff);
+}
+
+footer article button {
+    background: transparent;
+    border: 1px solid #f9f9f9;
+    border-radius: 10px;
+    color: #f9f9f9;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    padding: 15px 30px;   
+    width: 200px; 
+}
+
+footer article button:hover {
+    border-radius: 40px;
+}
+
+/* Responsive Styling */
+@media (min-width: 480px) {
+    footer article {
+        flex-direction: row;
+        min-height: 140px;
+        margin: -70px 20px 20px;
+        padding: 30px 50px 30px;
+    }
+    footer article button {
+        width: auto;
+        padding: 15px 30px; /* Increase padding as needed */
+    }
+}
+
+@media (min-width: 600px) {
+    footer article button {
+        width: 250px; /* Adjust width as needed */
+    }
+}
+
+@media (min-width: 64em) {
+    .footer .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 3fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+    gap: 1rem;
+    justify-items: start;
+    }
+}
+.footer a {
+    color: white;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9375rem;
+}
+@media (min-width: 64em) {
+    .footer__links {
+    justify-content: space-between;
+    align-items: start;
+    }
+}
+@media (min-width: 64em) {
+    .footer__links.col1 {
+    grid-area: links1;
+    }
+}
+.footer__links a {
+    line-height: 2.25;
+    transition: color 150ms ease-in-out;
+}
+.footer__links a:hover {
+    color: #5FBDFF;
+}
+@media (min-width: 64em) {
+    .footer__cta {
+    grid-area: cta;
+    text-align: right;
+    justify-self: end;
+    }
+}
+@media (max-width: 63.9375em) {
+    .footer__cta a.button {
+    margin-bottom: 1.875rem;
+    }
+}
+.footer__copyright {
+    font-size: 0.8125rem;
+    color: #9698a6;
+}
+@media (min-width: 64em) {
+    .footer__copyright {
+    grid-area: copyright;
+    align-self: end;
+    justify-self: end;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
