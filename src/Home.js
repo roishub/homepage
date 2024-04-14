@@ -57,7 +57,7 @@ const App = ({ user })=> {
                         <h1 className="logo">TypeSprint</h1>
                         <ul>
                             <li><a href="https://testyourskill.netlify.app/" className="active">Test your Skills</a></li>
-                            <li><a href="https://testyourskill.netlify.app/">Multiplayer</a></li>
+                            <li><a href="/">Multiplayer</a></li>
                             <li><a href="https://poetic-gelato-14aa56.netlify.app" >VoiceTyping</a></li>
                             <li><Link to="/about" activeClassname="active" className="about">About</Link></li>
                         </ul>
