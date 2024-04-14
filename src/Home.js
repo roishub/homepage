@@ -165,7 +165,7 @@ const App = ({ user })=> {
                     <footer className="footer">
                         <article>
                             <h2>Test your skills Today</h2>
-                            <a href="https://testyourskill.netlify.app/register">
+                            <a href="/">
                                 <button id="reg">
                                     <p>Sign Up Free</p>
                                     <span className="material-symbols-outlined"> trending_flat </span>
